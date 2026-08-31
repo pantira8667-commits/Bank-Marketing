@@ -66,3 +66,18 @@ Threshold Optimization
 SHAP Explainability
    ↓
 Business Interpretation
+
+## Model Performance
+
+The model was evaluated using Precision, Recall, and F1-score.
+
+### Baseline vs Balanced Logistic Regression
+
+| Model | Recall (yes) | Precision (yes) |
+|---|---:|---:|
+| Baseline Logistic Regression | 0.34 | - |
+| Balanced Logistic Regression | 0.83 | 0.42 |
+
+The balanced model significantly improved Recall for the `yes` class from 0.34 to 0.83.
+
+This improvement helps the model identify more customers who are likely to subscribe, although it comes with a trade-off in Precision.
